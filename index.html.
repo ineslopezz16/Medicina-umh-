@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Malla Medicina</title>
+  <meta charset="UTF-8" />
+  <title>Malla Medicina UMH - Primer Año</title>
   <style>
-    body { font-family: sans-serif; background: #f7f7f7; margin: 0; padding: 20px; }
-    .semestre { margin-bottom: 30px; }
-    .titulo { font-weight: bold; font-size: 20px; margin-bottom: 10px; }
-    .materias { display: flex; flex-wrap: wrap; gap: 10px; }
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .semestre { margin-bottom: 30px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    .semestre h2 { border-bottom: 2px solid #4caf50; padding-bottom: 5px; color: #2e7d32; }
+    .materias { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
     .materia {
-      padding: 10px;
-      background-color: #e0e0e0;
+      background: #e0e0e0;
+      padding: 10px 15px;
       border-radius: 5px;
-      width: 150px;
+      min-width: 150px;
       text-align: center;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s ease;
     }
-    .completada {
-      background-color: #8bc34a;
+    .materia.completada {
+      background: #4caf50;
       color: white;
       text-decoration: line-through;
     }
   </style>
 </head>
 <body>
-  <h1>Malla Curricular - Medicina</h1>
+  <h1>Malla Medicina UMH - Primer Año</h1>
 
   <div class="semestre">
-    <div class="titulo">1er Semestre</div>
+    <h2>1er Semestre</h2>
     <div class="materias">
-      <div class="materia completada">Anatomía</div>
-      <div class="materia">Biología Celular</div>
-      <div class="materia">Química General</div>
+      <div class="materia completada">Anatomía I</div>
+      <div class="materia completada">Biología Celular</div>
+      <div class="materia">Bioquímica I</div>
+      <div class="materia">Fisiología Celular y Biofísica</div>
+      <div class="materia">Historia de la Medicina</div>
+      <div class="materia">Documentación y Antropología Médica</div>
     </div>
   </div>
 
   <div class="semestre">
-    <div class="titulo">2do Semestre</div>
+    <h2>2º Semestre</h2>
     <div class="materias">
-      <div class="materia">Fisiología</div>
-      <div class="materia">Bioquímica</div>
-      <div class="materia">Psicología Médica</div>
+      <div class="materia">Anatomía II</div>
+      <div class="materia">Bioquímica II</div>
+      <div class="materia">Fisiología Médica I</div>
+      <div class="materia">Histología</div>
+      <div class="materia">Psicología</div>
     </div>
   </div>
 
 </body>
 </html>
-<div class="semestre">
-  <h2>3er Semestre</h2>
-  <div class="materias">
-    <div class="materia">Microbiología</div>
-    <div class="materia">Fisiopatología</div>
-    <div class="materia">Psicología médica</div>
-  </div>
-</div>
