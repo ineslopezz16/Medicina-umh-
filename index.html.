@@ -45,3 +45,11 @@
 
 </body>
 </html>
+<div class="semestre">
+  <h2>3er Semestre</h2>
+  <div class="materias">
+    <div class="materia">Microbiología</div>
+    <div class="materia">Fisiopatología</div>
+    <div class="materia">Psicología médica</div>
+  </div>
+</div>
