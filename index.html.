@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Medicina</title>
+  <style>
+    body { font-family: sans-serif; background: #f7f7f7; margin: 0; padding: 20px; }
+    .semestre { margin-bottom: 30px; }
+    .titulo { font-weight: bold; font-size: 20px; margin-bottom: 10px; }
+    .materias { display: flex; flex-wrap: wrap; gap: 10px; }
+    .materia {
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      width: 150px;
+      text-align: center;
+    }
+    .completada {
+      background-color: #8bc34a;
+      color: white;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular - Medicina</h1>
+
+  <div class="semestre">
+    <div class="titulo">1er Semestre</div>
+    <div class="materias">
+      <div class="materia completada">Anatomía</div>
+      <div class="materia">Biología Celular</div>
+      <div class="materia">Química General</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <div class="titulo">2do Semestre</div>
+    <div class="materias">
+      <div class="materia">Fisiología</div>
+      <div class="materia">Bioquímica</div>
+      <div class="materia">Psicología Médica</div>
+    </div>
+  </div>
+
+</body>
+</html>
